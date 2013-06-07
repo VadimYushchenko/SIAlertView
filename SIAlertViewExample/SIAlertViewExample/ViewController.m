@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "SIAlertView.h"
 
+
 @interface ViewController ()
 
 @end
@@ -91,7 +92,7 @@
 
 - (IBAction)alert2:(id)sender
 {
-    SIAlertView *alertView = [[SIAlertView alloc] initWithTitle:@"Title2" andMessage:@"Message2"];
+    SIAlertView *alertView = [[SIAlertView alloc] initWithController:self andTitle:@"Title2" andMessage:@"Message2"];
     [alertView addButtonWithTitle:@"Cancel"
                              type:SIAlertViewButtonTypeCancel
                           handler:^(SIAlertView *alertView) {
@@ -102,8 +103,8 @@
                           handler:^(SIAlertView *alertView) {
                               NSLog(@"OK Clicked");
                               
-                              [self alert3:nil];
-                              [self alert3:nil];
+                              //[self alert3:nil];
+                              //[self alert3:nil];
                           }];
     alertView.titleColor = [UIColor blueColor];
     alertView.cornerRadius = 10;
@@ -123,7 +124,12 @@
         NSLog(@"%@, didDismissHandler2", alertView);
     };
     
+    
+    //RNBlurModalView *modal = [[RNBlurModalView alloc] initWithViewController:self view:alertView];
     [alertView show];
+    //[modal show];
+    
+    
 }
 
 id observer1,observer2,observer3,observer4;

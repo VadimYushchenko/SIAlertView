@@ -33,6 +33,7 @@ typedef NS_ENUM(NSInteger, SIAlertViewTransitionStyle) {
 };
 
 @class SIAlertView;
+@class RNBlurView;
 typedef void(^SIAlertViewHandler)(SIAlertView *alertView);
 
 @interface SIAlertView : UIView
@@ -50,6 +51,8 @@ typedef void(^SIAlertViewHandler)(SIAlertView *alertView);
 
 @property (nonatomic, readonly, getter = isVisible) BOOL visible;
 
+@property (nonatomic, retain) RNBlurView *blurView;
+
 @property (nonatomic, strong) UIColor *titleColor NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
 @property (nonatomic, strong) UIColor *messageColor NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
 @property (nonatomic, strong) UIFont *titleFont NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
@@ -59,6 +62,7 @@ typedef void(^SIAlertViewHandler)(SIAlertView *alertView);
 @property (nonatomic, assign) CGFloat shadowRadius NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR; // default is 8.0
 
 - (id)initWithTitle:(NSString *)title andMessage:(NSString *)message;
+- (id)initWithController:(UIViewController *)controller andTitle:(NSString *)title andMessage:(NSString *)message;
 - (void)addButtonWithTitle:(NSString *)title type:(SIAlertViewButtonType)type handler:(SIAlertViewHandler)handler;
 
 - (void)show;

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		669E990E175FCF57009F35FE /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669E990D175FCF57009F35FE /* Accelerate.framework */; };
 		7E23C67317325EAA00784CF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E23C67217325EAA00784CF1 /* UIKit.framework */; };
 		7E23C67517325EAA00784CF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E23C67417325EAA00784CF1 /* Foundation.framework */; };
 		7E23C67717325EAA00784CF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E23C67617325EAA00784CF1 /* CoreGraphics.framework */; };
@@ -29,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		669E990A175FCF07009F35FE /* RNBlurModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNBlurModalView.h; sourceTree = "<group>"; };
+		669E990B175FCF07009F35FE /* RNBlurModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNBlurModalView.m; sourceTree = "<group>"; };
+		669E990D175FCF57009F35FE /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		7E23C66F17325EAA00784CF1 /* SIAlertViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIAlertViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E23C67217325EAA00784CF1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7E23C67417325EAA00784CF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				669E990E175FCF57009F35FE /* Accelerate.framework in Frameworks */,
 				7E23C69F1732606200784CF1 /* QuartzCore.framework in Frameworks */,
 				7E23C67317325EAA00784CF1 /* UIKit.framework in Frameworks */,
 				7E23C67517325EAA00784CF1 /* Foundation.framework in Frameworks */,
@@ -74,6 +79,7 @@
 		7E23C66617325EAA00784CF1 = {
 			isa = PBXGroup;
 			children = (
+				669E990D175FCF57009F35FE /* Accelerate.framework */,
 				7E23C69817325EBD00784CF1 /* SIAlertView */,
 				7E23C67817325EAA00784CF1 /* SIAlertViewExample */,
 				7E23C67117325EAA00784CF1 /* Frameworks */,
@@ -128,6 +134,8 @@
 		7E23C69817325EBD00784CF1 /* SIAlertView */ = {
 			isa = PBXGroup;
 			children = (
+				669E990A175FCF07009F35FE /* RNBlurModalView.h */,
+				669E990B175FCF07009F35FE /* RNBlurModalView.m */,
 				7E23C69917325EBD00784CF1 /* SIAlertView.bundle */,
 				7E23C69A17325EBD00784CF1 /* SIAlertView.h */,
 				7E23C69B17325EBD00784CF1 /* SIAlertView.m */,
